@@ -84,6 +84,10 @@ This project uses Semantic Versioning (SemVer):
 
 
 ---
+## 🧪 API Testing (Postman)
+- Postman collection: [`herbawash-collection.json`](docs/postman/herbawash-collection.json)
+- Screenshots of sample flows are available in [`docs/screenshots/`](docs/screenshots/)
+---
 ## 🔖 GitHub Release Workflow
 
 🔖 GitHub Release Workflow
