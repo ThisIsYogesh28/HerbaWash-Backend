@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter;
@@ -32,6 +33,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .anyRequest().authenticated()
                 )
+                .oauth2Login(Customizer.withDefaults())
                 .oauth2ResourceServer(oathu2->
                         oathu2.jwt(jwt->jwt.jwtAuthenticationConverter(authConverter)))
                 .addFilterBefore(rateLimitFilter, BearerTokenAuthenticationFilter.class     )
