@@ -14,7 +14,7 @@ It powers a modern organic soap e-commerce platform with enterprise-grade featur
 - 🧾 Audit logging, login history with Redis ZSet tracking
 - 🕒 Session management (auto-logout, expiry, active session sync)
 - 💳 Ready for payment gateway integration (coming in v2.0)
-- 📊 Prometheus/Grafana & ELK support ready (optional)
+
 
 ---
 
@@ -80,7 +80,7 @@ This project uses Semantic Versioning (SemVer):
 | `v1.0.0` | Initial release: JWT, OAuth2, RBAC, Redis config, and secure login    |
 | `v1.1.0` | Audit logging, login history tracking                                 |
 | `v1.2.0` | Redis-backed blacklist, per-API rate limiting, token revocation       |
-| `v2.0.0` | ⏳ Future: Microservices split, secure payment gateway, user analytics |
+
 
 
 ---
